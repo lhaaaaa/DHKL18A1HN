@@ -1,0 +1,382 @@
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub
+$ git clone https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+Cloning into '24174600042_NguyenTracVietAnh_18A1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub
+$ cd 24174600042_NguyenTracVietAnh_18A1
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at lacinia
+suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel placerat risus.
+Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra viverra sagittis. Vestibulum
+risus ante, molestie ac eros efficitur, bibendum tincidunt turpis. In sit amet tortor gravida,
+ultricies ante vitae, varius tortor. Aliquam finibus porta nulla sed gravida. Aliquam ultricies
+dapibus ante eget molestie. In hac habitasse platea dictumst. Aliquam aliquam enim at massa
+pharetra, et vestibulum sapien consequat. Donec accumsan quis metus at pellentesque. Morbi
+quis felis placerat, interdum justo a, aliquam risus. " > README.md
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main
+$ git commit -m "Thay doi file"
+[main 536257b] Thay doi file
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 633 bytes | 633.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+   4abb997..536257b  main -> main
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git checkout -b "nhanh_1"
+Switched to a new branch 'nhanh_1'
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > file_nhanh1.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_1)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_1)
+$ git commit -m "Tao nhanh 1"
+[nhanh_1 f631332] Tao nhanh 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh1.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_1)
+$ git push origin nhanh_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_1' on GitHub by visiting:
+remote:      https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1/pull/new/nhanh_1
+remote:
+To https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+ * [new branch]      nhanh_1 -> nhanh_1
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git checkout -b "nhanh_2"
+Switched to a new branch 'nhanh_2'
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales" > file_nhanh2.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_2)
+$ git add .
+warning: in the working copy of 'file_nhanh2.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_2)
+$ git commit -m "Tao nhanh 2"
+[nhanh_2 4e4555a] Tao nhanh 2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh2.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_2)
+$ git push origin nhanh_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_2' on GitHub by visiting:
+remote:      https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1/pull/new/nhanh_2
+remote:
+To https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+ * [new branch]      nhanh_2 -> nhanh_2
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git checkout -b "nhanh_3"
+Switched to a new branch 'nhanh_3'
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat. " > file_nhanh3.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_3)
+$ git add .
+warning: in the working copy of 'file_nhanh3.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_3)
+$ git commit -m "Tao nhanh 3"
+[nhanh_3 29c2b82] Tao nhanh 3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh3.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_3)
+$ git push origin nhanh_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_3' on GitHub by visiting:
+remote:      https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1/pull/new/nhanh_3
+remote:
+To https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+ * [new branch]      nhanh_3 -> nhanh_3
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git checkout -b "nhanh_4"
+Switched to a new branch 'nhanh_4'
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante. " > file_nhanh4.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_4)
+$ git add .
+warning: in the working copy of 'file_nhanh4.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_4)
+$ git commit -m "Tao nhanh 4"
+[nhanh_4 5a12e2c] Tao nhanh 4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh4.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_4)
+$ git push origin nhanh_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_4' on GitHub by visiting:
+remote:      https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1/pull/new/nhanh_4
+remote:
+To https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+ * [new branch]      nhanh_4 -> nhanh_4
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was 5a12e2c).
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+  nhanh_3
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git pull
+Already up to date.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ mkdir new_folder
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ cd new_folder
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1/new_folder (main)
+$ touch file1.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1/new_folder (main)
+$ touch file2.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1/new_folder (main)
+$ touch file3.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1/new_folder (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1/new_folder (main)
+$ cd ..
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git add new_folder
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git commit -m "Them folder"
+[main 9718974] Them folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_folder/file1.txt
+ create mode 100644 new_folder/file2.txt
+ create mode 100644 new_folder/file3.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 349 bytes | 349.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+   536257b..9718974  main -> main
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_1)
+$ git checkout -b nhanh_5
+Switched to a new branch 'nhanh_5'
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_5)
+$ ls
+README.md  file_nhanh1.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non metus
+eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan sapien, ac
+finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada v el dui nec feugiat.
+Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam ut hendrerit est. Nulla
+sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis ante, euismod quis
+pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula auctor viverra. Phasellus
+dignissim mollis leo, vitae tristique enim." > file_nhanh1.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_5)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_5)
+$ git commit -m "Sua doi file"
+[nhanh_5 705bc14] Sua doi file
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_5)
+$ git push origin nhanh_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 682 bytes | 682.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_5' on GitHub by visiting:
+remote:      https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1/pull/new/nhanh_5
+remote:
+To https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1.git
+ * [new branch]      nhanh_5 -> nhanh_5
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (nhanh_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -D nhanh_5
+Deleted branch nhanh_5 (was 705bc14).
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+  nhanh_3
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was f631332).
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was 4e4555a).
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -D nhanh_3
+Deleted branch nhanh_3 (was 29c2b82).
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git fetch
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 4.59 KiB | 247.00 KiB/s, done.
+From https://github.com/Nguyentracvietanh/24174600042_NguyenTracVietAnh_18A1
+   9718974..ca47251  main       -> origin/main
+   f631332..00d06da  nhanh_1    -> origin/nhanh_1
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git pull
+Updating 9718974..ca47251
+Fast-forward
+ file_nhanh1.txt | 8 ++++++++
+ file_nhanh2.txt | 1 +
+ file_nhanh3.txt | 1 +
+ file_nhanh4.txt | 1 +
+ 4 files changed, 11 insertions(+)
+ create mode 100644 file_nhanh1.txt
+ create mode 100644 file_nhanh2.txt
+ create mode 100644 file_nhanh3.txt
+ create mode 100644 file_nhanh4.txt
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git add .
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git push origin
+Everything up-to-date
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git branch -l
+* main
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git add .
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ADMIN@LAPTOP-LHMH1LRH MINGW64 ~/Desktop/folder bài tập git và git hub/24174600042_NguyenTracVietAnh_18A1 (main)
+$ git push origin
+Everything up-to-date
+
