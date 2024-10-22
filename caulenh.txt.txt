@@ -1,0 +1,208 @@
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git new_folder
+git: 'new_folder' is not a git command. See 'git --help'.
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git add new_folder
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git commit -m "Them folder"
+[main 50420c2] Them folder
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_folder/file1.txt
+ create mode 100644 new_folder/file2.txt
+ create mode 100644 new_folder/file3.txt
+ create mode 100644 new_folder/file4.txt
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 356 bytes | 356.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hthuong2006/24174600010_VuHoaiThuongg_baitap.git
+   7e69cdf..50420c2  main -> main
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_1)
+$ git checkout -b nhanh 5
+fatal: '5' is not a commit and a branch 'nhanh' cannot be created from it
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_1)
+$ git checkout -b nhanh_5
+Switched to a new branch 'nhanh_5'
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ ls
+README.md  file_nhanh1.txt  new_forder/
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ echo "sửa file" >file_nhanh1.txt
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ git commit -m "Sua doi file"
+[nhanh_5 8bd348d] Sua doi file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ git push origin nhanh_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_5' on GitHub by visiting:
+remote:      https://github.com/hthuong2006/24174600010_VuHoaiThuongg_baitap/pull/new/nhanh_5
+remote:
+To https://github.com/hthuong2006/24174600010_VuHoaiThuongg_baitap.git
+ * [new branch]      nhanh_5 -> nhanh_5
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non metus
+eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan sapien, ac
+finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada v el dui nec feugiat.
+Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam ut hendrerit est. Nulla
+sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis ante, euismod quis
+pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula auctor viverra. Phasellus
+dignissim mollis leo, vitae tristique enim." >file_nhanh1.txt
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ git commit -m "Sua doi file"
+[nhanh_5 6760766] Sua doi file
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ git push origin nhanh_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 688 bytes | 688.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/hthuong2006/24174600010_VuHoaiThuongg_baitap.git
+   8bd348d..6760766  nhanh_5 -> nhanh_5
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (nhanh_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -d nhanh_4
+error: branch 'nhanh_4' not found
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -d nhanh_5
+error: the branch 'nhanh_5' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_5'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -D nhanh_5
+Deleted branch nhanh_5 (was 6760766).
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+  nhanh_3
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was a1e6484).
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was 7585701).
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -D nhanh_3
+Deleted branch nhanh_3 (was 4593576).
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git add .
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git push origin
+To https://github.com/hthuong2006/24174600010_VuHoaiThuongg_baitap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hthuong2006/24174600010_VuHoaiThuongg_baitap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git fetch
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 4.62 KiB | 472.00 KiB/s, done.
+From https://github.com/hthuong2006/24174600010_VuHoaiThuongg_baitap
+   50420c2..d76f766  main       -> origin/main
+   a1e6484..2203d53  nhanh_1    -> origin/nhanh_1
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git pull
+Updating 50420c2..d76f766
+Fast-forward
+ file_nhanh1.txt | 1 +
+ file_nhanh2.txt | 1 +
+ file_nhanh3.txt | 1 +
+ file_nhanh4.txt | 1 +
+ 4 files changed, 4 insertions(+)
+ create mode 100644 file_nhanh1.txt
+ create mode 100644 file_nhanh2.txt
+ create mode 100644 file_nhanh3.txt
+ create mode 100644 file_nhanh4.txt
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git push origin
+Everything up-to-date
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git branch -l
+* main
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git add .
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git commit -m "Xoa File"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
+$ git push origin
+Everything up-to-date
+
+Admin@LAPTOP-06PO46GB MINGW64 ~/Desktop/bài tập/24174600010_VuHoaiThuongg_baitap (main)
