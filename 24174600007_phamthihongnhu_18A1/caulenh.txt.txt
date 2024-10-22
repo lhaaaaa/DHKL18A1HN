@@ -1,0 +1,158 @@
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git add new_folder
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git commit -m "Them folder"
+[main 5ccf938] Them folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_folder/file2.txt
+ create mode 100644 new_folder/file3.txt
+ create mode 100644 new_folder/filr1.txt
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 378 bytes | 189.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/phamnhu06/24174600007_phamthihongnhu_18A1.git
+   b7c6405..5ccf938  main -> main
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (nhanh_1)
+$ git checkout -b nhanh_4
+Switched to a new branch 'nhanh_4'
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (nhanh_4)
+$ ls
+README.md  file_nhanh1.txt
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (nhanh_4)
+$ echo "Sua file" > file_nhanh1.txt
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (nhanh_4)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (nhanh_4)
+$ git commit -m "Sua doi file"
+[nhanh_4 393da03] Sua doi file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (nhanh_4)
+$ git push origin nhanh_4
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 333 bytes | 166.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_4' on GitHub by visiting:
+remote:      https://github.com/phamnhu06/24174600007_phamthihongnhu_18A1/pull/new/nhanh_4
+remote:
+To https://github.com/phamnhu06/24174600007_phamthihongnhu_18A1.git
+ * [new branch]      nhanh_4 -> nhanh_4
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (nhanh_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git branch -d nhanh_4
+error: the branch 'nhanh_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_4'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was 393da03).
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was 8a9b352).
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was 599fe96).
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git add .
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git push origin
+To https://github.com/phamnhu06/24174600007_phamthihongnhu_18A1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/phamnhu06/24174600007_phamthihongnhu_18A1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git fetch
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), 3.76 KiB | 81.00 KiB/s, done.
+From https://github.com/phamnhu06/24174600007_phamthihongnhu_18A1
+   5ccf938..fb4b45f  main       -> origin/main
+   8a9b352..e7374c1  nhanh_1    -> origin/nhanh_1
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git pull
+Updating 5ccf938..fb4b45f
+Fast-forward
+ file_nhanh1.txt | 1 +
+ file_nhanh2.txt | 1 +
+ file_nhanh3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 file_nhanh1.txt
+ create mode 100644 file_nhanh2.txt
+ create mode 100644 file_nhanh3.txt
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git push origin
+Everything up-to-date
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git branch -l
+* main
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git add .
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
+$ git push origin
+Everything up-to-date
+
+Admin@Admin-PC MINGW64 ~/Downloads/Tin hoc co so/24174600007_phamthihongnhu_18A1 (main)
