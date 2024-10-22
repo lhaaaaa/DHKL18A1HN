@@ -1,0 +1,374 @@
+laptop hoangkhuong@MinhDao MINGW64 /d
+$ git clone https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+Cloning into '24174600043_DaoQuangMinh_Baitap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+laptop hoangkhuong@MinhDao MINGW64 /d
+$ cd 24174600043_DaoQuangMinh_Baitap
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at lacinia
+suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel placerat risus.
+Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra viverra sagittis. Vestibulum
+risus ante, molestie ac eros efficitur, bibendum tincidunt turpis. In sit amet tortor gravida,
+ultricies ante vitae, varius tortor. Aliquam finibus porta nulla sed gravida. Aliquam ultricies
+dapibus ante eget molestie. In hac habitasse platea dictumst. Aliquam aliquam enim at massa
+pharetra, et vestibulum sapien consequat. Donec accumsan quis metus at pellentesque. Morbi
+quis felis placerat, interdum justo a, aliquam risus." > README.md
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git commit -m "Thay đổi file"
+[main 7fa7352] Thay đổi file
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 646 bytes | 646.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+   8480e7b..7fa7352  main -> main
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_1)
+$ git add text_branch_1.txt
+git commit -m "Tạo tệp tin text_branch_1.txt với nội dung Lorem ipsum"
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+[branch_1 b010494] Tạo tệp tin text_branch_1.txt với nội dung Lorem ipsum
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 402 bytes | 402.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap/pull/new/branch_1
+remote:
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ * [new branch]      branch_1 -> branch_1
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_2)
+$ git add text_branch_2.txt
+git commit -m "Tạo tệp tin text_branch_2.txt với nội dung Praesent ullamcorper"
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+[branch_2 6509328] Tạo tệp tin text_branch_2.txt với nội dung Praesent ullamcorper
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 403.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap/pull/new/branch_2
+remote:
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ * [new branch]      branch_2 -> branch_2
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_3)
+$ git add text_branch_3.txt
+git commit -m "Tạo tệp tin text_branch_3.txt với nội dung Integer sit amet"
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+[branch_3 024ad8f] Tạo tệp tin text_branch_3.txt với nội dung Integer sit amet
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 408 bytes | 408.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap/pull/new/branch_3
+remote:
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ * [new branch]      branch_3 -> branch_3
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_4)
+$ git add text_branch_4.txt
+git commit -m "Tạo tệp tin text_branch_4.txt với nội dung Cras ac mi"
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+[branch_4 67cdf66] Tạo tệp tin text_branch_4.txt với nội dung Cras ac mi
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 393 bytes | 393.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap/pull/new/branch_4
+remote:
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ * [new branch]      branch_4 -> branch_4
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout -b
+error: switch `b' requires a value
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout -b "nhanh_4"
+Switched to a new branch 'nhanh_4'
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (nhanh_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante. " > file_nhanh4.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (nhanh_4)
+$ git add .
+warning: in the working copy of 'file_nhanh4.txt', LF will be replaced by CRLF the next time Git touches it
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (nhanh_4)
+$ git commit -m "Thêm nhanh_4"
+[nhanh_4 d67314d] Thêm nhanh_4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh4.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (nhanh_4)
+$ git push origin nhanh_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 351 bytes | 351.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_4' on GitHub by visiting:
+remote:      https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap/pull/new/nhanh_4
+remote:
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ * [new branch]      nhanh_4 -> nhanh_4
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (nhanh_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git branch -d nhanh_4
+error: the branch 'nhanh_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_4'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was d67314d).
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git branch -l
+  branch_1
+  branch_2
+  branch_3
+  branch_4
+* main
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ mkdir new_folder
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ cd new_folder
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap/new_folder (main)
+$ touch file1.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap/new_folder (main)
+$ touch file2.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap/new_folder (main)
+$ touch file3.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap/new_folder (main)
+$ cd
+
+laptop hoangkhuong@MinhDao MINGW64 ~
+$ cd ..
+
+laptop hoangkhuong@MinhDao MINGW64 /c/Users
+$ cd /d/24174600043_DaoQuangMinh_Baitap/new_folder
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ mkdir main_folder
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ echo "Nội dung của main_txt_1.txt" > main_folder/main_txt_1.txt
+echo "Nội dung của main_txt_2.txt" > main_folder/main_txt_2.txt
+echo "Nội dung của main_txt_3.txt" > main_folder/main_txt_3.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git add main_folder
+warning: in the working copy of 'main_folder/main_txt_1.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_2.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git push origin main
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+A       main_folder/main_txt_1.txt
+A       main_folder/main_txt_2.txt
+A       main_folder/main_txt_3.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada vel dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis ante, euismod quis pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula auctor viverra. Phasellus dignissim mollis leo, vitae tristique enim." > text_branch_1.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_5)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_5)
+$ git commit -m "Chỉnh sửa nội dung tệp tin text_branch_1.txt trên nhánh branch_5"
+[branch_5 79ba479] Chỉnh sửa nội dung tệp tin text_branch_1.txt trên nhánh branch_5
+ 4 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 1000 bytes | 1000.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap/pull/new/branch_5
+remote:
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ * [new branch]      branch_5 -> branch_5
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_5)
+$ git branch -d branch_5
+error: cannot delete branch 'branch_5' used by worktree at 'D:/24174600043_DaoQuangMinh_Baitap'
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_5)
+$ git push origin --delete branch_5
+To https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap.git
+ - [deleted]         branch_5
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (branch_5)
+$
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git pull origin main
+From https://github.com/MinhDao26/24174600043_DaoQuangMinh_Baitap
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+$ ls
+README.md     text_branch_1.txt  text_branch_3.txt
+main_folder/  text_branch_2.txt  text_branch_4.txt
+
+laptop hoangkhuong@MinhDao MINGW64 /d/24174600043_DaoQuangMinh_Baitap (main)
+
+
+
